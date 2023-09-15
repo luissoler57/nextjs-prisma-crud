@@ -1,0 +1,29 @@
+@api=http://localhost:3000/api
+@id=4
+
+### Obteniendo
+GET {{api}}/tasks
+
+### Obteniendo
+GET {{api}}/tasks/{{id}}
+
+### Creando
+POST {{api}}/tasks
+Content-Type: application/json 
+
+{
+  "title":"tarea 1",
+  "description": "Descripcion tarea 1"
+}
+
+### Update
+PUT {{api}}/tasks/{{id}}
+Content-Type: application/json 
+
+{
+  "title":"tarea UPDATE",
+  "description": "Descripcion tarea 1"
+}
+
+### Obteniendo
+DELETE {{api}}/tasks/{{id}}
